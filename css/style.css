@@ -1,0 +1,182 @@
+html {
+  box-sizing: border-box;
+}
+
+/* The Universal Selector */
+*, /* All elements*/
+*::before, /* All ::before pseudo-elements */
+*::after { /* All ::after pseudo-elements */
+  /* height & width will now include border & padding by default
+     but can be over-ridden as needed */
+  box-sizing: inherit;
+}
+
+body {
+  background-color: gray;
+  font-family: sans-serif;
+  margin: 0;
+}
+
+nav button {
+  background-color: #ea4c89;
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  text-align: center;
+}
+
+nav {
+  display:flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+
+}
+
+#destinations {
+display: flex;
+column-gap: 10px;
+height: 80px;
+align-items: center;
+padding: 0 20px;
+}
+
+#actions {
+display: flex;
+column-gap: 10px;
+align-items: center;
+margin: 0 0 0 10px;
+height: 80px;
+padding: 0 20px;
+}
+
+#hero {
+  height: 280px;
+  background-color: white;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+#discover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 25px;
+}
+
+#discover p {
+background-color: #ffffff;
+color: black;
+border-radius: 15px;
+padding: 9px;
+}
+
+#topics {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  row-gap: 25px;
+  margin: 10px;
+  margin-top: 25px;
+}
+
+#topics p {
+background-color: #ffffff;
+color: black;
+border-radius: 15px;
+padding: 9px;
+border: 2px solid black;
+}
+
+#headers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+}
+
+h1 {
+  color: black;
+}
+
+input {
+  display: flex;
+  padding: 16px 24px;
+  border-radius: 100px;
+  border: 1px rgba(0, 0, 0, 20);
+  height: 58px;
+  width: 600px;
+  border: none;
+  justify-items: center;
+  border: 2px solid gray
+}
+
+#subnav {
+  display: flex;
+  justify-content: right;
+  padding: 32px 35px 32px 35px;
+  background-color: white;
+  align-items: center;
+}
+
+#subnav > button {
+  display: flex;
+  border-radius: 8px;
+  padding: 10px 35px 10px 16px;
+  border: 1px solid rgba(0, 0, 0, .3);
+  background-color: white;
+  width: 115px;
+  height: 40px;
+  text-align: left; 
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  justify-content: center;
+  padding: 0 72px 32px 72px;
+  gap: 32px;
+}
+
+.img-placeholder {
+  width: 355px;
+  height: 270px;
+  background-color: grey;
+  border-radius:  8px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+
+.card-footer > * {
+  margin: 8px 0 0;
+}
+
+
+nav > div{
+  display: flex;
+
+}
+
+direct child divs of parent nav
+*/
+
+nav > div:first-child {
+  gap: 24px;
+  padding: 16px;
+  
+}
