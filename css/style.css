@@ -131,13 +131,14 @@ input {
 #subnav > button {
   display: flex;
   border-radius: 8px;
-  padding: 10px 35px 10px 16px;
-  border: 1px solid rgba(0, 0, 0, .3);
+  padding: 2px 35px 10px 16px;
+  border: 2px solid black;
   background-color: white;
   width: 115px;
   height: 40px;
   text-align: left; 
 }
+
 
 main {
   display: flex;
@@ -151,7 +152,7 @@ main {
 .img-placeholder {
   width: 355px;
   height: 270px;
-  background-color: grey;
+  background-color: transparent;
   border-radius:  8px;
 }
 
